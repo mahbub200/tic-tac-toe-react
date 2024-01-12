@@ -19,7 +19,7 @@ export default function Board() {
     //mutating  new things
     // creates new array
     const nextSquares = squares.slice();
-    //just returning one time
+    //just returning one time or when winner announced
     if (squares[i] || calculateWinner(squares)) {
       return;
     }
@@ -30,6 +30,7 @@ export default function Board() {
       nextSquares[i] = "O";
     }
     setSquares(nextSquares);
+    //toggling x and o
     setXIsNext(!xIsNext);
   }
   return (
