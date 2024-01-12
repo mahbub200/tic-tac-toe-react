@@ -1,6 +1,7 @@
 import React from "react";
 
 const Square = ({ value, squareClick }) => {
+  // onclick is referenced as a prop
   return (
     <>
       <button
