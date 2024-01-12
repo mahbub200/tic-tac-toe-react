@@ -1,16 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
-const Square = () => {
-  const [value, setValue] = useState(null);
-  function clickHandler() {
-    setValue("x");
-  }
+const Square = ({ value }) => {
   return (
     <>
-      <button
-        className="bg-white border border-blue-400  m-1 h-24 w-24 "
-        onClick={clickHandler}
-      >
+      <button className="bg-white border border-blue-400  m-1 h-24 w-24 ">
         {value}
       </button>
     </>
